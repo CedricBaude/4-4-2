@@ -1,0 +1,694 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/gazon6.jpg");
+    background-origin: border-box;
+    background-repeat: repeat;
+}
+
+main{
+    display: flex;
+
+    margin-top: 10vh;
+    max-height: 75vh;
+}
+
+.terrain{
+    box-sizing: border-box;
+    margin: auto;
+    border: 6px solid #ffffff;
+    width: 1200px;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.bouton_d {
+    line-height: 24px;
+    height: 24px;
+    width: 100%;
+    top: -40px;
+    left: 0px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.bouton_d ul {
+    line-height: 24px;
+    height: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    overflow: hidden;
+
+
+}
+
+.bouton_g {
+    line-height: 24px;
+    height: 24px;
+    width: 100%;
+    bottom: -40px;
+    right: 0px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.bouton_g ul {
+    line-height: 24px;
+    height: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+
+
+
+}
+
+li{
+    text-decoration: none;
+    list-style-type:none;
+    line-height: 24px;
+    height: 24px;
+    width: 50px;
+    margin-left: 4px;
+    /*background-color: white;
+    text-align: center;
+    border-radius: 6pt;*/
+    
+}
+
+
+
+/* Joueurs */
+
+/*Joueurs gauche*/
+
+#joueur1_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 46%;
+    left: -1%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n1.png");
+}
+
+#joueur2_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 14%;
+    left: 29%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n2.png");
+}
+
+#joueur3_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 31%;
+    left: 13%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n3.png");
+}
+
+#joueur4_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 61%;
+    left: 13%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n4.png");
+}
+
+#joueur5_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 78%;
+    left: 29%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n5.png");
+}
+
+#joueur6_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 14%;
+    left: 70%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n6.png");
+}
+
+#joueur7_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 37%;
+    left: 56%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n7.png");
+}
+
+#joueur8_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 57%;
+    left: 56%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n8.png");
+}
+
+#joueur9_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 76%;
+    left: 70%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n9.png");
+}
+
+#joueur10_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 39%;
+    left: 88%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n10.png");
+}
+
+#joueur11_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 54%;
+    left: 88%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n11.png");
+}
+
+#joueur12_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: -63px;
+    left: 35%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n2.png");
+}
+
+#joueur13_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: -63px;
+    left: 43%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n4.png");
+}
+
+#joueur14_gauche{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: -63px;
+    left: 51%;
+    flex: none;
+    background-image: url("../img/maillot_lens_n7.png");
+}
+
+/* Joueurs droite */
+
+#joueur1_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 46%;
+    right: -1%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n1.png");
+}
+
+#joueur2_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 14%;
+    right: 29%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n2.png");
+}
+
+#joueur3_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 31%;
+    right: 13%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n3.png");
+}
+
+#joueur4_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 61%;
+    right: 13%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n4.png");
+}
+
+#joueur5_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 78%;
+    right: 29%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n5.png");
+}
+
+#joueur6_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 14%;
+    right: 70%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n6.png");
+}
+
+#joueur7_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 37%;
+    right: 56%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n7.png");
+}
+
+#joueur8_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 57%;
+    right: 56%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n8.png");
+}
+
+#joueur9_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 76%;
+    right: 70%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n9.png");
+}
+
+#joueur10_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 39%;
+    right: 88%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n10.png");
+}
+
+#joueur11_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    top: 54%;
+    right: 88%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n11.png");
+}
+
+#joueur12_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    bottom: -63px;
+    right: 51%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n10.png");
+}
+
+#joueur13_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    bottom: -63px;
+    right: 43%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n1.png");
+}
+
+#joueur14_droite{
+    position: absolute;
+    height: 46px;
+    width: 46px;
+    bottom: -63px;
+    right: 36%;
+    flex: none;
+    background-image: url("../img/maillot_lille_n8.png");
+}
+
+
+
+
+
+
+/* Droite*/
+
+.droite{
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-left: 3px solid #ffffff;
+    position: relative;  
+}
+
+
+.surface_droite{
+    position: relative;
+    box-sizing: border-box;
+    width: 35%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-left: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.avant_but_droit{
+    box-sizing: border-box;
+    width: 34%;
+    height: 54%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-left: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;  
+}
+
+.but_droit{
+    position: absolute;
+    box-sizing: border-box;
+    width: 20%;
+    height: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: -20%;
+    border-right: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;
+}
+
+.penalty_droit {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50% 50%;
+    right: 65%;
+}
+
+.petite_surface_droite {
+    box-sizing: border-box;
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    right: 100%;
+    border-bottom: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-left: 6px solid #ffffff;
+    border-bottom-left-radius: 100pt;
+    border-top-left-radius: 100pt;
+}
+
+.corner_haut_d{
+    box-sizing: border-box;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    border-bottom-left-radius: 100pt;
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid #ffffff;
+}
+
+.corner_bas_d{
+    box-sizing: border-box;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 0;
+    border-top-left-radius: 100pt;
+    border-top: 6px solid #ffffff;
+    border-left: 6px solid #ffffff;
+}
+
+.banc1_d{
+    box-sizing: border-box;
+    position: absolute;
+    height: 40px;
+    width: 20%;
+    background-color: #ffffff;
+    bottom: -60px;
+    right: 10%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.banc2_d{
+    box-sizing: border-box;
+    position: absolute;
+    height: 40px;
+    width: 25%;
+    border: #ffffff dashed 6px;
+    bottom: -60px;
+    right: 35%;
+
+}
+
+
+/* Gauche */
+
+.gauche{
+    box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 3px solid #ffffff;
+}
+
+.surface_gauche{
+    position: relative;
+    box-sizing: border-box;
+    width: 35%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-right: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.avant_but_gauche{
+
+    box-sizing: border-box;
+    width: 34%;
+    height: 54%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-right: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;  
+}
+
+.but_gauche{
+    position: absolute;
+    box-sizing: border-box;
+    width: 20%;
+    height: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: -20%;
+    border-left: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;
+}
+
+.penalty_gauche {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50% 50%;
+    left: 65%;
+}
+
+.petite_surface_gauche {
+    box-sizing: border-box;
+    position: absolute;
+    height: 40%;
+    width: 20%;
+    left: 100%;
+    border-bottom: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    border-bottom-right-radius: 100pt;
+    border-top-right-radius: 100pt;
+}
+
+.corner_haut_g{
+    box-sizing: border-box;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    border-bottom-right-radius: 100pt;
+    border-bottom: 6px solid #ffffff;
+    border-right: 6px solid #ffffff;
+
+}
+
+.corner_bas_g{
+    box-sizing: border-box;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    bottom: 0;
+    border-top-right-radius: 100pt;
+    border-top: 6px solid #ffffff;
+    border-right: 6px solid #ffffff;
+}
+
+
+.rond1{
+    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: -20.7%;
+    border: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-bottom: 6px solid #ffffff;
+    border-radius: 50%;
+}
+
+.banc1_g{
+    box-sizing: border-box;
+    position: absolute;
+    height: 40px;
+    width: 20%;
+    background-color: #ffffff;
+    top: -60px;
+    left: 10%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.banc2_g{
+    box-sizing: border-box;
+    position: absolute;
+    height: 40px;
+    width: 25%;
+    border: #ffffff dashed 6px;
+    top: -60px;
+    left: 35%;
+
+}
+
+@media screen and (max-width: 800px){
+    #joueur1_gauche, #joueur2_gauche,#joueur3_gauche, #joueur4_gauche,#joueur5_gauche,#joueur6_gauche,#joueur7_gauche,#joueur8_gauche,#joueur9_gauche,#joueur10_gauche,#joueur11_gauche,#joueur12_gauche,#joueur13_gauche,#joueur14_gauche {
+
+        height: 36px;
+        width: 36px;
+        background-size: contain;
+    }
+    
+    #joueur1_droite, #joueur2_droite, #joueur3_droite, #joueur4_droite, #joueur5_droite, #joueur6_droite, #joueur7_droite, #joueur8_droite, #joueur9_droite, #joueur10_droite,#joueur11_droite,#joueur12_droite,#joueur13_droite,#joueur14_droite{
+
+        height: 36px;
+        width: 36px;
+        background-size: contain;
+    }
+}
+
+
+@media screen and (max-width: 400px)
+{
+body{
+    background-color: aqua;
+    }
+main{
+    display: block;
+    margin-top: 30vh;
+    transform: rotate(90deg);
+    margin-top: 12vh;
+}
+.terrain{
+
+    width: 700px;
+    height: 30vh;
+
+}
+
+#joueur1_gauche, #joueur2_gauche,#joueur3_gauche, #joueur4_gauche,#joueur5_gauche,#joueur6_gauche,#joueur7_gauche,#joueur8_gauche,#joueur9_gauche,#joueur10_gauche,#joueur11_gauche,#joueur12_gauche,#joueur13_gauche,#joueur14_gauche {
+    transform: rotate(-90deg);
+    height: 33px;
+    width: 33px;
+    background-size: contain;
+}
+
+#joueur1_droite, #joueur2_droite, #joueur3_droite, #joueur4_droite, #joueur5_droite, #joueur6_droite, #joueur7_droite, #joueur8_droite, #joueur9_droite, #joueur10_droite,#joueur11_droite,#joueur12_droite,#joueur13_droite,#joueur14_droite{
+    transform: rotate(-90deg);
+    height: 33px;
+    width: 33px;
+    background-size: contain;
+}
+}
+
+
+
+
+
